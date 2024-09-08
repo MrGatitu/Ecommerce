@@ -11,4 +11,5 @@ SCOPE
     
 
 Front-End -> TO BE DISCUSSED
+
 BackEnd -> Java and SpringBoot
