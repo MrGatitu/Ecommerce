@@ -20,9 +20,11 @@ public class ProductsController {
         return this.productRepository.findAll();
     }
 
-    @GetMapping("Hello")
-    public String Hello(){
-        return "Hello, Welcomes to this Repository";
-    }
+    @PostMapping("add")
+
+    // @GetMapping("Hello")
+    // public String Hello(){
+    //     return "Hello, Welcomes to this Repository";
+    // }
 
 }
