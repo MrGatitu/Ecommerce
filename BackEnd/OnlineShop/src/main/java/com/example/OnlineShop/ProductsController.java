@@ -2,6 +2,8 @@ package com.example.OnlineShop;
 
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,10 +23,7 @@ public class ProductsController {
     }
 
     @PostMapping("add")
-
-    // @GetMapping("Hello")
-    // public String Hello(){
-    //     return "Hello, Welcomes to this Repository";
-    // }
-
+    public Products addProduct (@RequestBody Products product){
+        return this.productRepository.save(product);
+    }
 }
